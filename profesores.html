@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profesores - Escuela DevRock</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de Escuela DevRock" class="h-10 w-10 mr-2">
+            </a>
+            <a href="index.html">
+                <h1 class="text-3xl font-bold">Escuela DevRock</h1>
+            </a>
+        </div>
+        <div class="block md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2 4h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <nav class="hidden md:block">
+            <a href="index.html" class="mr-4">Inicio</a>
+            <a href="programas.html" class="mr-4">Programas</a>
+            <a href="profesores.html" class="mr-4">Profesores</a>
+            <a href="admisiones.html" class="mr-4">Admisiones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <div id="mobile-menu" class="nav-links absolute top-16 left-0 w-full bg-blue-600 p-4 text-center hidden md:hidden">
+        <a href="index.html" class="block py-2 text-white">Inicio</a>
+        <a href="programas.html" class="block py-2 text-white">Programas</a>
+        <a href="profesores.html" class="block py-2 text-white">Profesores</a>
+        <a href="admisiones.html" class="block py-2 text-white">Admisiones</a>
+        <a href="contacto.html" class="block py-2 text-white">Contacto</a>
+    </div>
+
+    <main class="p-8 flex flex-col items-center">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Nuestros Profesores</h2>
+        
+        <div class="bg-white rounded-lg p-6 shadow-lg mb-4 w-full max-w-3xl text-center">
+            <img src="img/enrique.png" alt="Enrique Tillar" class="h-32 w-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Enrique Tillar</h3>
+            <p class="mb-2">Ingeniero en Sistemas</p>
+            <p class="mb-4">Con más de 10 años de experiencia en el desarrollo de soluciones tecnológicas innovadoras, Enrique ha trabajado en una variedad de proyectos que abarcan desde aplicaciones web hasta sistemas complejos.</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-lg mb-4 w-full max-w-3xl text-center">
+            <img src="img/guillermo.png" alt="Guillermo Waldemar Garcia" class="h-32 w-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">Guillermo Waldemar Garcia</h3>
+            <p class="mb-2">Full Stack Developer</p>
+            <p class="mb-4">Trabajando en WordPress, Guillermo tiene una amplia experiencia en el desarrollo de plataformas web, asegurando que cada proyecto esté optimizado y sea accesible para todos los usuarios.</p>
+        </div>
+
+        <div class="bg-white rounded-lg p-6 shadow-lg mb-4 w-full max-w-3xl text-center">
+            <img src="img/jose.png" alt="José Miranda" class="h-32 w-32 rounded-full mx-auto mb-4">
+            <h3 class="text-xl font-bold mb-2">José Miranda</h3>
+            <p class="mb-2">Diseñador Gráfico</p>
+            <p class="mb-4">Con más de 15 años de experiencia, José es especialista en diseños UX/UI, creando interfaces intuitivas y atractivas que mejoran la experiencia del usuario en cada proyecto.</p>
+        </div>
+    </main>
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        &copy; 2024 Escuela DevRock. Página hecha por Esteban Guzzo.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admisiones - Escuela DevRock</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de Escuela DevRock" class="h-10 w-10 mr-2">
+            </a>
+            <a href="index.html">
+                <h1 class="text-3xl font-bold">Escuela DevRock</h1>
+            </a>
+        </div>
+        <div class="block md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2 4h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <nav class="hidden md:block">
+            <a href="index.html" class="mr-4">Inicio</a>
+            <a href="programas.html" class="mr-4">Programas</a>
+            <a href="profesores.html" class="mr-4">Profesores</a>
+            <a href="admisiones.html" class="mr-4">Admisiones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <div id="mobile-menu" class="nav-links absolute top-16 left-0 w-full bg-blue-600 p-4 text-center hidden md:hidden">
+        <a href="index.html" class="block py-2 text-white">Inicio</a>
+        <a href="programas.html" class="block py-2 text-white">Programas</a>
+        <a href="profesores.html" class="block py-2 text-white">Profesores</a>
+        <a href="admisiones.html" class="block py-2 text-white">Admisiones</a>
+        <a href="contacto.html" class="block py-2 text-white">Contacto</a>
+    </div>
+
+    <main class="p-8 flex flex-col items-center">
+        <h2 class="text-2xl font-semibold mb-4 text-center">Formulario de Inscripción</h2>
+        <p class="mb-4 text-center">Complete el siguiente formulario para inscribirse en los cursos de la Escuela DevRock.</p>
+        
+        <form action="#" method="post" class="bg-white p-6 rounded-lg shadow-lg w-full max-w-lg">
+            <div class="mb-4">
+                <label for="full-name" class="block text-gray-700 font-bold mb-2">Nombre Completo:</label>
+                <input type="text" id="full-name" name="full-name" required class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="email" class="block text-gray-700 font-bold mb-2">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="phone" class="block text-gray-700 font-bold mb-2">Teléfono:</label>
+                <input type="tel" id="phone" name="phone" class="w-full p-2 border border-gray-300 rounded">
+            </div>
+            <div class="mb-4">
+                <label for="course" class="block text-gray-700 font-bold mb-2">Curso Deseado:</label>
+                <select id="course" name="course" required class="w-full p-2 border border-gray-300 rounded">
+                    <option value="programacion-web">Programación Web (HTML, CSS, JavaScript, React)</option>
+                    <option value="diseno-ux-ui">Diseño UX/UI (Próximamente)</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <label for="comments" class="block text-gray-700 font-bold mb-2">Comentarios Adicionales:</label>
+                <textarea id="comments" name="comments" rows="4" class="w-full p-2 border border-gray-300 rounded"></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 text-white p-2 rounded-lg">Inscribirse</button>
+            </div>
+        </form>
+    </main>
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        &copy; 2024 Escuela DevRock. Página hecha por Esteban Guzzo.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mobile.js"></script>
+</body>
+</html>

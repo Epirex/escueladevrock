@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio - Escuela DevRock</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4 flex justify-between items-center">
+        <div class="flex items-center">
+            <a href="index.html">
+                <img src="img/logo.png" alt="Logo de Escuela DevRock" class="h-10 w-10 mr-2">
+            </a>
+            <a href="index.html">
+                <h1 class="text-3xl font-bold">Escuela DevRock</h1>
+            </a>
+        </div>
+        <div class="block md:hidden">
+            <button id="menu-toggle" class="focus:outline-none">
+                <svg class="w-6 h-6" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M2 4h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2zm0 6h16a1 1 0 110 2H2a1 1 0 110-2z" clip-rule="evenodd" />
+                </svg>
+            </button>
+        </div>
+        <nav class="hidden md:block">
+            <a href="index.html" class="mr-4">Inicio</a>
+            <a href="programas.html" class="mr-4">Programas</a>
+            <a href="profesores.html" class="mr-4">Profesores</a>
+            <a href="admisiones.html" class="mr-4">Admisiones</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+    <div id="mobile-menu" class="nav-links absolute top-16 left-0 w-full bg-blue-600 p-4 text-center hidden md:hidden">
+        <a href="index.html" class="block py-2 text-white">Inicio</a>
+        <a href="programas.html" class="block py-2 text-white">Programas</a>
+        <a href="profesores.html" class="block py-2 text-white">Profesores</a>
+        <a href="admisiones.html" class="block py-2 text-white">Admisiones</a>
+        <a href="contacto.html" class="block py-2 text-white">Contacto</a>
+    </div>
+
+    <main class="p-8 flex flex-col items-center">
+        <img src="img/inicio.png" alt="Bienvenido a Escuela DevRock" class="rounded-lg mb-4 w-full h-auto max-w-full">
+        <p class="mb-4 text-center text-lg leading-relaxed px-4">
+            En la Escuela DevRock ofrecemos clases de programación en HTML, CSS, JavaScript y React. Prepárate para el futuro con una educación de calidad y práctica.
+        </p>
+        <a href="admisiones.html">
+            <button class="bg-blue-600 text-white text-xl font-semibold p-4 rounded-full mb-8 hover:bg-blue-700 transition duration-300">Inscribirse</button>
+        </a>
+        
+        <h2 class="text-2xl font-semibold mb-4 text-center">Nuestros Lenguajes de Programación</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+            <div class="bg-white rounded-lg p-4 shadow flex flex-col items-center">
+                <img src="img/html.png" alt="HTML" class="h-16 w-16 mb-2">
+                <h3 class="text-xl font-semibold">HTML</h3>
+                <p class="text-center text-sm leading-relaxed px-2">HTML es el lenguaje de marcado utilizado para crear la estructura de las páginas web.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow flex flex-col items-center">
+                <img src="img/css.png" alt="CSS" class="h-16 w-16 mb-2">
+                <h3 class="text-xl font-semibold">CSS</h3>
+                <p class="text-center text-sm leading-relaxed px-2">CSS es el lenguaje de estilo que se utiliza para diseñar y dar formato a las páginas web.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow flex flex-col items-center">
+                <img src="img/javascript.png" alt="JavaScript" class="h-16 w-16 mb-2">
+                <h3 class="text-xl font-semibold">JavaScript</h3>
+                <p class="text-center text-sm leading-relaxed px-2">JavaScript es un lenguaje de programación que permite agregar interactividad a las páginas web.</p>
+            </div>
+            <div class="bg-white rounded-lg p-4 shadow flex flex-col items-center">
+                <img src="img/react.png" alt="React" class="h-16 w-16 mb-2">
+                <h3 class="text-xl font-semibold">React</h3>
+                <p class="text-center text-sm leading-relaxed px-2">React es una biblioteca de JavaScript utilizada para construir interfaces de usuario.</p>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        &copy; 2024 Escuela DevRock. Página hecha por Esteban Guzzo.
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="mobile.js"></script> <!-- Enlace al archivo JS renombrado -->
+</body>
+</html>
